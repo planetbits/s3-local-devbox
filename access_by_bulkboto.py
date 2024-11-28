@@ -1,5 +1,4 @@
-import logging
- 
+import logging 
 from bulkboto3 import BulkBoto3
  
 logging.basicConfig(
@@ -23,10 +22,8 @@ bulkboto_agent = BulkBoto3(
     verbose=TRANSFER_VERBOSITY,
 )
  
-# create a new bucket
 bulkboto_agent.create_new_bucket(bucket_name=TARGET_BUCKET)
  
-# upload a whole directory with its structure to an S3 bucket in multi thread mode
 bulkboto_agent.upload_dir_to_storage(
     bucket_name=TARGET_BUCKET,
     local_dir="test_dir",

@@ -5,7 +5,7 @@ from botocore.exceptions import NoCredentialsError, PartialCredentialsError
 # Configuration
 AWS_ACCESS_KEY_ID = "admin"
 AWS_SECRET_ACCESS_KEY = "admin123"
-ENDPOINT_URL = "http://127.0.0.1:9000"  # Example: "http://localhost:4566" for localstack
+ENDPOINT_URL = "http://127.0.0.1:9000"
 BUCKET_NAME = "my-bucket"
 FOLDER_PATH = "test_dir"
 
